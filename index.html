@@ -140,6 +140,19 @@ ul,ol{padding:0;list-style:none;}
   .plain .cell b{display:none;}
 }
 
+.cite-cap{margin-top:36px;max-width:40rem;}
+.cite-cap > p{font-size:15.5px;line-height:1.6;color:var(--muted);}
+.cite-cap strong{color:var(--ink);font-weight:600;}
+.cite-cap ol{margin-top:22px;border-top:1px solid var(--line);}
+.cite-cap li{padding:18px 0 16px;border-bottom:1px solid var(--line);}
+.cite-cap li:last-child{border-bottom:0;}
+.cite-cap .when{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted-2);}
+.cite-cap a{display:inline;margin-top:6px;font-size:15px;font-weight:600;letter-spacing:-.012em;color:var(--navy);line-height:1.35;}
+.cite-cap a .u{background-image:linear-gradient(currentColor,currentColor);background-position:0 100%;background-repeat:no-repeat;
+  background-size:0 1.5px;transition:background-size .7s var(--e-out);}
+.cite-cap a:hover .u,.cite-cap a:focus-visible .u{background-size:100% 1.5px;}
+.cite-cap .what{display:block;margin-top:6px;font-size:13.5px;line-height:1.5;color:var(--muted);max-width:48ch;}
+
 .offer{border:1.5px solid var(--navy);border-radius:22px;background:#fff;padding:28px 22px 26px;}
 @media(min-width:760px){.offer{padding:36px 32px 32px;}}
 .offer-stack{max-width:40rem;display:grid;gap:0;}
@@ -252,6 +265,7 @@ footer{background:var(--mist);color:var(--muted);padding:40px 0 calc(36px + env(
   .plain .cell,.plain .yes,.plain .no{padding:0;border:0;border-radius:0;background:transparent;font-size:14px;}
   .plain .cell b{display:none;}
   .plain .head{display:grid;}
+  .cite-cap li{break-inside:avoid;}
   .contact a{border-color:var(--line) !important;color:var(--ink) !important;}
   .contact .copy b,.contact .copy em{color:var(--ink) !important;}
 }
@@ -345,6 +359,21 @@ footer{background:var(--mist);color:var(--muted);padding:40px 0 calc(36px + env(
         </li>
       </ul>
     </div>
+    <aside class="cite-cap reveal">
+      <p>The middle column is a real budget. I did not invent it. Public Sri Lankan price guides, opened August 2026, put a typical business website in that band. They are guides for that kind of site — <strong>not a quote to copy this sample</strong>.</p>
+      <ol>
+        <li>
+          <span class="when">Opened August 2026</span>
+          <a href="https://www.web-dev.lk/blogs/wordpress-website-development-sri-lanka/" target="_blank" rel="noopener"><span class="u">web-dev.lk · website costs in Sri Lanka</span></a>
+          <span class="what">A ready-made look, about 50,000–150,000. The band you saw sits with that kind of site.</span>
+        </li>
+        <li>
+          <span class="when">Opened August 2026</span>
+          <a href="https://tectera.com/how-much-does-website-design-cost-in-sri-lanka/" target="_blank" rel="noopener"><span class="u">Tectera · how much a website costs</span></a>
+          <span class="what">A public guide. Typical work and custom work are different columns.</span>
+        </li>
+      </ol>
+    </aside>
   </div>
 </section>
 
