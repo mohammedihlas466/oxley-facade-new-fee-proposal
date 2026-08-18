@@ -139,8 +139,9 @@ ul,ol{padding:0;list-style:none;}
   .plain .cell b{display:none;}
 }
 
-.offer{border:1.5px solid var(--navy);border-radius:22px;background:#fff;padding:28px 22px 26px;max-width:40rem;}
+.offer{border:1.5px solid var(--navy);border-radius:22px;background:#fff;padding:28px 22px 26px;}
 @media(min-width:760px){.offer{padding:36px 32px 32px;}}
+.offer-stack{max-width:40rem;display:grid;gap:0;}
 .chip{display:inline-flex;align-items:center;min-height:28px;padding:4px 10px;border-radius:999px;margin-bottom:14px;
   font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;background:var(--navy);color:#fff;}
 .offer .who{margin-top:8px;font-size:15.5px;color:var(--muted);line-height:1.5;}
@@ -155,6 +156,17 @@ ul,ol{padding:0;list-style:none;}
 .deadline{margin-top:22px;padding:16px 18px;border-radius:14px;background:var(--mist);border:1px solid var(--line);
   font-size:15.5px;line-height:1.5;}
 .deadline strong{font-weight:600;}
+
+.look{margin-top:36px;padding-top:28px;border-top:1px solid var(--line);}
+.look .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted-2);}
+.look h3{margin-top:10px;}
+.look .who{margin-top:8px;font-size:15.5px;color:var(--muted);line-height:1.5;}
+.look .price{margin-top:18px;}
+.look .price b{font-size:clamp(28px,4.5vw,36px);}
+.look .incl{margin-top:18px;}
+.look-note{margin-top:18px;font-size:15.5px;line-height:1.55;color:var(--muted);}
+.look-note strong{color:var(--ink);font-weight:600;}
+.look-back{margin-top:16px;font-size:16px;font-weight:600;letter-spacing:-.015em;line-height:1.4;color:var(--navy);}
 
 .pay{display:grid;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .pay article{padding:32px 0;border-bottom:1px solid var(--line);min-width:0;}
@@ -233,7 +245,7 @@ footer{background:var(--mist);color:var(--muted);padding:40px 0 calc(36px + env(
   .cover-lede,.cover-client,.on-dark p,.on-dark .lede{color:var(--muted) !important;}
   .cover h1{color:var(--navy) !important;}
   .js .reveal{opacity:1;transform:none;}
-  .plain li,.offer,.gets article,.pay article{break-inside:avoid;}
+  .plain li,.offer,.look,.gets article,.pay article{break-inside:avoid;}
   .contact a{border-color:var(--line) !important;color:var(--ink) !important;}
   .contact .copy b,.contact .copy em{color:var(--ink) !important;}
 }
@@ -269,8 +281,8 @@ footer{background:var(--mist);color:var(--muted);padding:40px 0 calc(36px + env(
       <h2 class="h2">You were right to worry a cheaper job would miss the five things.</h2>
     </div>
     <div class="letter reveal">
-      <p>I am <strong>not offering that cheaper job</strong>. A version without the login, the course buttons, or News would miss what you asked for. So it is not on the table.</p>
-      <p>This page is the five things, at <strong>£950</strong>, because Shammas is family to me, and you are his family. It is this list, this fortnight. It is not a starting point. I will not trim the list to meet another number.</p>
+      <p>You asked what <strong>£750</strong> includes. It is written below the offer, so the two jobs are not confused. That figure is the sample on your domain — the look only. No private login. If a course button or a payment link has to change, you write to me.</p>
+      <p>This page is the five things, at <strong>£950</strong>, because Shammas is family to me, and you are his family. It is this list, this fortnight. It is not a starting point. I will not move the five things onto £750.</p>
       <p>I am not holding anything back from those five things to meet a number. The look you approved, the private login, the course buttons, payment / WhatsApp / forms in one place, News, oxleyfacades.com, the student portal left alone, and the old Google links — <strong>if it was in the voice notes, it is in this figure</strong>.</p>
       <p>What is not in £950 is only how I usually finish: a sit-down with your team, a third round of notes, sixty days of help, and student enquiries into a spreadsheet — plus an email to you and a confirmation to the student. <strong>That bundle is still £1,500</strong>, on the original document.</p>
       <p>If a line is not clear, write to me. I will explain it in one sentence.</p>
@@ -337,6 +349,7 @@ footer{background:var(--mist);color:var(--muted);padding:40px 0 calc(36px + env(
       <h2 class="h2">The five things. £950. Because you are Shammas’s family.</h2>
       <p class="lede">£950 is everything you asked me for in the voice notes. It exists only if the first payment arrives by 24 August 2026. Miss that date, and this list comes off the table. The original proposal at £1,500 still stands.</p>
     </div>
+    <div class="offer-stack">
     <article class="offer reveal">
       <span class="chip">The brief · this fortnight</span>
       <h3 class="h3">The five things you named</h3>
@@ -356,6 +369,24 @@ footer{background:var(--mist);color:var(--muted);padding:40px 0 calc(36px + env(
       </ul>
       <p class="deadline"><strong>The first £475 must arrive by 24 August 2026.</strong> That is the start. GBP is the figure. Rupees here are a courtesy at about £1 = LKR 450, and will move with the rate.</p>
     </article>
+
+    <article class="look reveal" id="look">
+      <p class="k">You asked what £750 includes</p>
+      <h3 class="h3">The look only</h3>
+      <p class="who">The sample, on oxleyfacades.com. I keep the keys.</p>
+      <p class="price"><b>£750</b><span>GBP · not the five things</span></p>
+      <ul class="incl">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4.5 12.5 5 5 10-11"/></svg>Every public page at the sample’s standard, on oxleyfacades.com</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4.5 12.5 5 5 10-11"/></svg>The student portal not touched. Old Google links pointed at the new pages</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4.5 12.5 5 5 10-11"/></svg>One round of notes — one collected list</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4.5 12.5 5 5 10-11"/></svg>If something I built is broken in the first 14 days, I fix it</li>
+        <li class="out"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>No private login. You cannot change a course button, a form, payment, WhatsApp, or News yourselves</li>
+      </ul>
+      <p class="look-note">If a button or a link has to change, you write to me. I quote that work before I do it. The private page is not in this figure, and will not be added later as a favour.</p>
+      <p class="look-back">The five things you named are £950.</p>
+      <p class="look-note">Same halves, same date: the first £375 must arrive by 24 August 2026. Nothing is handed over until both payments are in.</p>
+    </article>
+    </div>
   </div>
 </section>
 
@@ -364,20 +395,20 @@ footer{background:var(--mist);color:var(--muted);padding:40px 0 calc(36px + env(
     <div class="sec-head reveal">
       <p class="eyebrow">How it is paid</p>
       <h2 class="h2">Half to begin. Half before anything is handed over.</h2>
-      <p class="lede">The website, the private login, the files, and oxleyfacades.com as the new site — only when both payments are in. The old pages stay up until then.</p>
+      <p class="lede">For the five things, each half is £475. For the look only, each half is £375. Same date. The website, the files, and oxleyfacades.com as the new site — only when both payments are in. The old pages stay up until then.</p>
     </div>
     <div class="pay reveal">
       <article>
         <span class="num">01</span>
         <p class="fig">£475</p>
         <span class="when">Must arrive by 24 August 2026</span>
-        <p class="copy">That payment starts the thirty days. If it is late, this £950 list ends. If you are late with logins or copy after we start, the thirty days pause by the same amount.</p>
+        <p class="copy">That is the first half of the five things. If you chose the look only, this half is £375. Late, and this page’s figures end. If you are late with logins or copy after we start, the thirty days pause by the same amount.</p>
       </article>
       <article>
         <span class="num">02</span>
         <p class="fig">£475</p>
         <span class="when">When you can click the finished site</span>
-        <p class="copy">Due before it replaces the current pages. If this half is late, the old site stays. I will not switch the address, or hand over the login, on a promise.</p>
+        <p class="copy">The matching half of the five things — or £375 if it is the look only — due before it replaces the current pages. If this half is late, the old site stays. I will not switch the address, or hand over a login or files, on a promise.</p>
       </article>
     </div>
   </div>
@@ -418,7 +449,7 @@ footer{background:var(--mist);color:var(--muted);padding:40px 0 calc(36px + env(
     <div class="reveal">
       <p class="eyebrow amber">24 August 2026</p>
       <h2 class="h2" style="margin-top:14px">Reply with the five things, or the original proposal.</h2>
-      <p class="lede" style="margin-top:16px">If it is the five things, I will send the Wise details the same day. The first £475 must be in by the 24th. Any question — write or call.</p>
+      <p class="lede" style="margin-top:16px">If it is the five things, I will send the Wise details the same day. The first payment must be in by the 24th. If it is the look only, say that in those words. Any question — write or call.</p>
     </div>
     <div class="contact reveal" style="--d:.1s">
       <a href="mailto:ihlas@revarcsystems.com?subject=Oxley%20Fa%C3%A7ades%20%E2%80%94%20the%20five%20things%20(%C2%A3950)">
